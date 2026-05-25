@@ -346,3 +346,49 @@ margin-top: 0px;
   font-size: 10px;
 }
 }
+
+@media (max-width:1024px){
+  .menu-bar {
+position: fixed;
+
+  }
+  .logo{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 0px;
+  }
+
+.navbar {
+  position: fixed;   /* important */
+  top: 0;
+  left: 0;
+ 
+  display: flex;
+  height: 80px;
+
+   background-color: lightgray; /* navbar clear ga kanipistundi */
+  z-index: 1000; 
+  
+ }
+
+.menu-bar{
+    position: fixed;
+    top: 80px;
+    right: -250px;
+
+    width: 220px;
+
+    background-color: #7d3d7d;
+
+    padding: 1px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    z-index: 99999;
+}
+
+.menu-bar.active{
+    right: 5px;
+}
+
+}
